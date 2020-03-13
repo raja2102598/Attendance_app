@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/night"
+    tools:context=".AddStudent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="318dp"
+        android:layout_height="106dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="152dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/attendance" />
+
+    <TextView
+        android:id="@+id/passedclassnamedatabase"
+        android:layout_width="335dp"
+        android:layout_height="84dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:fontFamily="serif"
+        android:text="www"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:targetApi="p" />
+
+    <EditText
+        android:id="@+id/studentNamedatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="52dp"
+        android:autoSizeMaxTextSize="2dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/coursename"
+        android:ems="10"
+        android:hint="student name"
+        android:inputType="text"
+
+        android:padding="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textAllCaps="true"
+        android:textColorHint="#2327E7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mcneeseiddatabase"
+
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/mcneeseiddatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="60dp"
+        android:autoSizeMaxTextSize="2dp"
+        android:autoSizeTextType="uniform"
+        android:background="@drawable/coursename"
+        android:ems="10"
+        android:hint="student id"
+
+        android:inputType="text"
+
+        android:padding="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:textAllCaps="true"
+        android:textColorHint="#2327E7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passedclassnamedatabase"
+        tools:ignore="HardcodedText,MissingConstraints,UnusedAttribute" />
+
+    <Button
+        android:id="@+id/addStudentdatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/studentNamedatabase"
+        android:layout_alignBottom="@+id/studentNamedatabase"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="68dp"
+
+        android:background="@drawable/submit"
+        android:padding="20dp"
+        android:text="add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentNamedatabase"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/deleteStudentdatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/studentNamedatabase"
+
+        android:layout_alignBottom="@+id/addStudentdatabase"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/submit"
+        android:padding="20dp"
+
+        android:text="Delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentNamedatabase"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

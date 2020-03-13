@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".course">
+    <Button
+        android:id="@+id/ipbtn"
+        android:layout_width="215dp"
+        android:layout_height="351dp"
+        android:background="@drawable/ip"
+        android:text="Internet Programming"
+        app:layout_constraintEnd_toStartOf="@+id/cdbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cdbtn"
+        android:layout_width="187dp"
+        android:layout_height="351dp"
+        android:text="Compiler Design"
+        android:background="@drawable/cd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mcbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mcbtn"
+        android:layout_width="215dp"
+        android:layout_height="351dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/mc"
+        android:text="Mobile Computing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/aibtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cdbtn" />
+
+    <Button
+        android:id="@+id/aibtn"
+        android:layout_width="187dp"
+        android:layout_height="351dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ai"
+        android:text="Artificial Intelligence"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mcbtn"
+        app:layout_constraintTop_toBottomOf="@+id/cdbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
